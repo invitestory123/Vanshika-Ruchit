@@ -13,9 +13,9 @@ export const wedding = {
   },
   invitationLine:
     "Together with their families, invite you to join in celebrating the auspicious union and wedding festivities",
-  dateLabel: "Celebrations in Gwalior",
+  dateLabel: "01 & 02 December 2026 · Gwalior",
   shortDate: "Vanshika & Ruchit",
-  countdownTarget: "2026-12-12T19:00:00+05:30",
+  countdownTarget: "2026-12-02T19:00:00+05:30",
   story: [
     "Two hearts brought together by destiny, and two loving families united with blessing, affection, and tradition.",
     "As we embark on this sacred journey of love and togetherness, your presence and heartfelt blessings will make our celebrations truly unforgettable.",
@@ -23,15 +23,15 @@ export const wedding = {
   events: [
     {
       name: "Ring Ceremony",
-      date: "Celebration 01",
+      date: "01.12.26",
       time: "06:00 PM Onwards",
       venue: "Impril Golf Resort, Gwalior",
       note: "An enchanting evening of exchange of rings, romance, music and celebration.",
       mapsUrl: "https://www.google.com/maps/search/?api=1&query=Impril+Golf+Resort+Gwalior",
     },
     {
-      name: "Haldi Carnival",
-      date: "Celebration 02",
+      name: "Haldi Ceremony",
+      date: "02.12.26",
       time: "11:00 AM Onwards",
       venue: "Mannat Banquet, Gwalior",
       note: "Splashes of auspicious yellow, flower showers, joyful dhol and carnival cheer.",
@@ -39,7 +39,7 @@ export const wedding = {
     },
     {
       name: "Wedding Ceremony",
-      date: "Celebration 03",
+      date: "02.12.26",
       time: "07:00 PM Onwards",
       venue: "Mannat Banquet, Gwalior",
       note: "The sacred vows, divine pheras, and auspicious blessings under the stars.",
@@ -88,7 +88,7 @@ export function buildIcs() {
     `DTSTAMP:${fmt(new Date())}`,
     `DTSTART:${fmt(start)}`,
     `DTEND:${fmt(end)}`,
-    `SUMMARY:Wedding Ceremony of ${wedding.groom} & ${wedding.bride}`,
+    `SUMMARY:Wedding Ceremony of ${wedding.bride} & ${wedding.groom}`,
     `LOCATION:${wedding.venue.name}, ${wedding.venue.address}`,
     "DESCRIPTION:Wedding ceremonies and celebrations. We would love to have you with us.",
     "END:VEVENT",

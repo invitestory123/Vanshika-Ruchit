@@ -18,12 +18,12 @@ import { CursorGlow, ExperienceRail, PetalVeil } from "@/components/invite/Inter
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: `${wedding.groom} & ${wedding.bride} — Wedding Celebrations` },
+      { title: `${wedding.bride} & ${wedding.groom} — Wedding Celebrations` },
       {
         name: "description",
-        content: `${wedding.groom} weds ${wedding.bride}. Ceremonies and wedding celebrations in Gwalior at ${wedding.venue.name}.`,
+        content: `${wedding.bride} weds ${wedding.groom}. Ceremonies and wedding celebrations in Gwalior at ${wedding.venue.name}.`,
       },
-      { property: "og:title", content: `${wedding.groom} & ${wedding.bride}` },
+      { property: "og:title", content: `${wedding.bride} & ${wedding.groom}` },
       {
         property: "og:description",
         content: `An invitation to the wedding of Vanshika & Ruchit in Gwalior.`,
@@ -303,11 +303,11 @@ function Invitation() {
             className={`mt-4 font-display text-[clamp(2.6rem,14vw,4.5rem)] font-light leading-[0.98] gold-text reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
             style={{ transitionDelay: "900ms" }}
           >
-            {wedding.groom}
+            {wedding.bride}
             <span className="block font-title text-[0.32em] tracking-[0.3em] text-hall-light/90 my-2">
               &amp;
             </span>
-            {wedding.bride}
+            {wedding.groom}
           </h1>
 
           {/* Parents Details */}
@@ -318,38 +318,22 @@ function Invitation() {
             <div className="grid grid-cols-2 gap-3 text-center divide-x divide-hall-glow/25">
               <div className="pr-2">
                 <span className="block font-body text-[0.52rem] uppercase tracking-[0.28em] text-hall-glow">
-                  Groom's Parents
-                </span>
-                <p className="mt-1 font-display text-[0.85rem] font-medium text-ivory">
-                  {wedding.groomParents.full}
-                </p>
-              </div>
-              <div className="pl-3">
-                <span className="block font-body text-[0.52rem] uppercase tracking-[0.28em] text-hall-glow">
                   Bride's Parents
                 </span>
                 <p className="mt-1 font-display text-[0.85rem] font-medium text-ivory">
                   {wedding.brideParents.full}
                 </p>
               </div>
+              <div className="pl-3">
+                <span className="block font-body text-[0.52rem] uppercase tracking-[0.28em] text-hall-glow">
+                  Groom's Parents
+                </span>
+                <p className="mt-1 font-display text-[0.85rem] font-medium text-ivory">
+                  {wedding.groomParents.full}
+                </p>
+              </div>
             </div>
           </div>
-
-          <div
-            className={`reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
-            style={{ transitionDelay: "1350ms" }}
-          >
-            <Ornament className="mt-5" width={180} />
-            <p className="mt-3 font-title text-[0.78rem] tracking-[0.32em] text-hall-light">
-              {wedding.shortDate} · Gwalior
-            </p>
-          </div>
-          <p
-            className={`mx-auto mt-4 max-w-[20rem] font-display text-[0.98rem] italic leading-relaxed text-ivory/90 reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
-            style={{ transitionDelay: "1550ms" }}
-          >
-            {wedding.invitationLine}
-          </p>
         </div>
 
         <div
@@ -396,7 +380,7 @@ function Invitation() {
           <Reveal delay={120} className="mt-8">
             <div className="rounded-xl border border-hall-glow/35 bg-[#251707]/80 p-6 text-center backdrop-blur-md shadow-[var(--shadow-warm)]">
               <span className="inline-block rounded-full border border-hall-glow/45 bg-hall-glow/10 px-3.5 py-1 font-body text-[0.58rem] uppercase tracking-[0.24em] text-hall-glow">
-                Main Venue · Haldi Carnival &amp; Wedding Ceremony
+                Main Venue · Haldi Ceremony &amp; Wedding Ceremony
               </span>
               <p className="mt-4 font-display text-[clamp(1.4rem,5.5vw,1.8rem)] font-light text-ivory">
                 {wedding.venue.name}
@@ -553,7 +537,7 @@ function Invitation() {
           <Reveal>
             <Ornament width={190} />
             <p className="mt-8 font-display text-[clamp(2.3rem,12vw,3.2rem)] font-light leading-tight gold-text">
-              {wedding.groom} &amp; {wedding.bride}
+              {wedding.bride} &amp; {wedding.groom}
             </p>
             <p className="mt-4 font-title text-[0.74rem] tracking-[0.34em] text-hall-light">
               {wedding.shortDate}
