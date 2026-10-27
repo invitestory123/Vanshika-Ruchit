@@ -423,7 +423,7 @@ function Invitation() {
             </div>
           </Reveal>
 
-          {/* Secondary Venue: Impril Golf Resort */}
+          {/* Secondary Venue: Imperial Golf Resort */}
           <Reveal delay={220} className="mt-6">
             <div className="rounded-xl border border-hall-glow/35 bg-[#251707]/80 p-6 text-center backdrop-blur-md shadow-[var(--shadow-warm)]">
               <span className="inline-block rounded-full border border-hall-glow/45 bg-hall-glow/10 px-3.5 py-1 font-body text-[0.58rem] uppercase tracking-[0.24em] text-hall-glow">
@@ -475,7 +475,7 @@ function Invitation() {
                     RSVP
                   </span>
                   <p className="mt-3 font-display text-[1.15rem] font-light text-ivory">
-                    Manish &amp; Priya Agarwal
+                    Manish &amp; Priya Agrawal
                   </p>
                 </div>
                 <p className="mt-3 text-[0.66rem] uppercase tracking-[0.2em] text-hall-light/70">
@@ -492,7 +492,7 @@ function Invitation() {
                     Eternal Blessings
                   </span>
                   <p className="mt-3 font-display text-[1.15rem] font-light text-ivory">
-                    Late Kiranmal &amp; Mithlesh Agarwal
+                    Late Kiranmal &amp; Mithlesh Agrawal
                   </p>
                 </div>
                 <p className="mt-3 text-[0.66rem] uppercase tracking-[0.2em] text-hall-light/70">

@@ -8,8 +8,8 @@ export const wedding = {
   },
   groomParents: {
     father: "Deepak Goyal",
-    mother: "Kalpna Goyal",
-    full: "Deepak & Kalpna Goyal",
+    mother: "Kalpana Goyal",
+    full: "Deepak & Kalpana Goyal",
   },
   invitationLine:
     "Together with their families, invite you to join in celebrating the auspicious union and wedding festivities",
@@ -25,9 +25,9 @@ export const wedding = {
       name: "Ring Ceremony",
       date: "01.12.26",
       time: "06:00 PM Onwards",
-      venue: "Impril Golf Resort, Gwalior",
+      venue: "Imperial Golf Resort, Gwalior",
       note: "An enchanting evening of exchange of rings, romance, music and celebration.",
-      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Impril+Golf+Resort+Gwalior",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Imperial+Golf+Resort+Gwalior",
     },
     {
       name: "Haldi Ceremony",
@@ -53,19 +53,19 @@ export const wedding = {
     mapsUrl: "https://maps.app.goo.gl/gK5Cfb6YKP9Cn7U96",
     mapEmbed: "https://www.google.com/maps?q=26.1814633,78.2125473&hl=en&z=15&output=embed",
     resortVenue: {
-      name: "Impril Golf Resort",
+      name: "Imperial Golf Resort",
       address: "Gwalior, Madhya Pradesh",
-      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Impril+Golf+Resort+Gwalior",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Imperial+Golf+Resort+Gwalior",
     },
   },
   rsvp: [
     {
       role: "RSVP",
-      names: "Manish & Priya Agarwal",
+      names: "Manish & Priya Agrawal",
     },
     {
       role: "In Loving Memory & Eternal Blessings",
-      names: "Late Kiranmal & Mithlesh Agarwal",
+      names: "Late Kiranmal & Mithlesh Agrawal",
     },
   ],
   firm: {
